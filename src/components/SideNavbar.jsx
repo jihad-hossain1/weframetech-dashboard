@@ -29,10 +29,11 @@ const SideNavbar = () => {
   return (
     <div className='hidden md:block flex-none max-w-[350px] bg-[#15132B] px-12 '>
       <div className='mt-10 flex items-center space-x-6 '>
-        <h4 className='text-white text-2xl pl-8'>weframetech</h4>{" "}
-        <HiBars3 className='text-3xl text-white cursor-pointer'></HiBars3>
+        <h4 className='text-slate-100 text-2xl pl-8'>weframetech</h4>{" "}
+        <HiBars3 className='text-3xl text-[#7879F1] cursor-pointer'></HiBars3>
       </div>
-      <div className='text-[#464366] mt-10'>
+      <div className='text-[#464366] mt-14'>
+        <h4 className="uppercase text-slate-100 mb-8 font-semibold">Main Menu</h4>
         <ul className='flex flex-col space-y-8 '>
           <li>
             <NavLink
@@ -104,8 +105,8 @@ const SideNavbar = () => {
                 )}
               </div>
           </li>
-          <li>
-            <NavLink
+          <li className="flex justify-between items-center">
+          <NavLink
               className='flex items-center space-x-7 '
               href={`/dashboard/contact`}
               activeClassName='text-[#6418C3]'
@@ -114,6 +115,10 @@ const SideNavbar = () => {
               <MdPermContactCalendar className='text-3xl'></MdPermContactCalendar>{" "}
               <span className='text-xl '>Contact</span>
             </NavLink>
+          <div className="rounded-full px-3 py-1 text-sm text-slate-100 bg-[#E328AF] uppercase">
+          new
+            </div>
+            
           </li>
           <li>
             <NavLink
