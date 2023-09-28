@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ChatPage = () => {
+const Invoice = () => {
     return (
         <div>
             <h4 className='mt-20 text-center text-[#7879F1]'>
-            ChatPage here....
+            Invoice here....
       </h4>
         </div>
     );
 };
 
-export default ChatPage;
+export default Invoice;

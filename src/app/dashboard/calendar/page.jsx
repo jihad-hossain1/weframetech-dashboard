@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ChatPage = () => {
+const CalenderPage = () => {
     return (
         <div>
             <h4 className='mt-20 text-center text-[#7879F1]'>
-            ChatPage here....
+            CalenderPage here....
       </h4>
         </div>
     );
 };
 
-export default ChatPage;
+export default CalenderPage;

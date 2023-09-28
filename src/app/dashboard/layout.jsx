@@ -4,15 +4,18 @@ import React from 'react';
 
 const DashboardLayout = ({children}) => {
     return (
+        <>
         <section className='flex'>
             <SideNavbar></SideNavbar>
-            <div className='flex-1 md:flex h-screen relative'>
+            <div className='flex-1 md:flex relative'>
                 <DashHeader></DashHeader>
-            </div>
-            <div className='bg-[#0D0B21]'>
-            {children}
+                <div className='bg-[#0D0B21] h-screen w-full mt-20'>
+                {children}
+                </div>
             </div>
         </section>
+        
+        </>
     );
 };
 
