@@ -1,9 +1,10 @@
+import KanbanNavbar from '@/components/KanbanCompo/KanbanNavbar';
 import React from 'react';
 
 const KanbanLayout = ({children}) => {
     return (
-        <div>
-            <nav>kanban header here ...</nav>
+        <div className='px-12 py-8'>
+            <KanbanNavbar></KanbanNavbar>
             {children}
         </div>
     );

@@ -9,8 +9,10 @@ const DashboardLogin = () => {
         displayName: 'Jihad Hossain',
         photoURL: '',
         userStatus: 'Super Admin'
-    }
+    };
+
   const [isActive, setIsActive] = useState(false);
+
   return (
     <div >
       <div  className="flex items-center space-x-4">
@@ -28,11 +30,11 @@ const DashboardLogin = () => {
       {isActive && (
         <div className="relative ">
             <ul className="fixed top-16 bg-[#211A75] px-12  py-4 rounded-sm mt-4 ml-14 space-y-4">
-          <li>
-            <Link href={'/dashboard'}>Profile</Link>
+          <li className="hover:text-[#7879F1]">
+            <Link onClick={()=>setIsActive(false)} href={'/dashboard'}>Profile</Link>
           </li>
-          <li>
-            <Link href={'/dashboard'}>LogOut</Link>
+          <li className="hover:text-[#7879F1]">
+            <Link onClick={()=>setIsActive(false)} href={'/dashboard'}>LogOut</Link>
           </li>
           
         </ul>
