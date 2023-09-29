@@ -1,9 +1,10 @@
+
 import React from "react";
 
-// import { LiaSearchSolid } from "react-icons/lia";
-import { BiSolidBellRing, BiSolidMoviePlay } from "react-icons/bi";
-import { MdLibraryAddCheck, MdEmail } from "react-icons/md";
+
 import OthersMenus from "./OthersMenus";
+import Language from "./Language";
+import DashboardLogin from "./UserNavbarDashboard/DashboardLogin";
 
 const DashHeader = () => {
   
@@ -33,13 +34,13 @@ const DashHeader = () => {
           />
         </form>
       </div>
-
       {/* others menu section  */}
      <OthersMenus></OthersMenus>
-      <div className='flex '>
-        <div className=''>language</div>
-
-        <div className='md:mt-4'>User section</div>
+      <div className='flex space-x-4 items-center justify-end'>
+        <Language></Language>
+        <div
+    className="inline-block h-10 min-h-[1em] w-0.5 self-stretch bg-[#1f1a5c] opacity-100 mt-3"></div>
+        <DashboardLogin></DashboardLogin>
       </div>
     </div>
   );
