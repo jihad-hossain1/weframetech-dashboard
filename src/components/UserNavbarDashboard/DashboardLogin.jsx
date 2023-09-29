@@ -25,7 +25,7 @@ const DashboardLogin = () => {
                 {user?.userStatus}
             </h4>
         </div>
-        <IoIosArrowDown onClick={() => setIsActive(!isActive)} className="text-2xl font-semibold cursor-pointer"></IoIosArrowDown>
+        <IoIosArrowDown onClick={() => setIsActive(!isActive)} className="text-xl font-semibold cursor-pointer"></IoIosArrowDown>
       </div>
       {isActive && (
         <div className="relative ">

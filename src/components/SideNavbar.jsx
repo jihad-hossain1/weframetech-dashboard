@@ -17,6 +17,7 @@ import {
 } from "react-icons/md";
 
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 const SideNavbar = () => {
   const [isEmailActive, setIsEmailActive] = useState(false);
@@ -78,9 +79,9 @@ const SideNavbar = () => {
               </div>
           </li>
           <li>
-          <div className='cursor-pointer'>
+          <Link href={'/dashboard/kanban'} className='cursor-pointer '>
                 <div
-                  className='flex items-center justify-between'
+                  className='flex items-center justify-between '
                   onClick={() => setIsKanbanActive(!isKanbanActive)}
                 >
                   <div className='flex items-center space-x-7 '>
@@ -102,7 +103,7 @@ const SideNavbar = () => {
                     </NavLink>
                   </div>
                 )}
-              </div>
+              </Link>
           </li>
           <li className="flex justify-between items-center">
           <NavLink
@@ -217,14 +218,4 @@ const SideNavbar = () => {
 
 export default SideNavbar;
 
-{
-  /* <NavLink
-className='flex items-center space-x-7 '
-exact={`/dashboard/email` === "/dashboard"}
-href={`/dashboard/email`}
-activeClassName='text-[#6418C3]'
->
-<MdEmail className='text-3xl'></MdEmail>
-<span className='text-xl '>Email</span>
-</NavLink> */
-}
+

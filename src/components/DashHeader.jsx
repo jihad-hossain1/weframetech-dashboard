@@ -17,7 +17,7 @@ const DashHeader = () => {
             width='20'
             height='20'
             fill='currentColor'
-            class='absolute left-3 top-1/2 -mt-2.5 text-[#7879F1] pointer-events-none '
+            className='absolute left-3 top-1/2 -mt-2.5 text-[#7879F1] pointer-events-none '
             aria-hidden='true'
           >
             <path
