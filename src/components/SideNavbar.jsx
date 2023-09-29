@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-import { HiCog6Tooth, HiBars3 } from "react-icons/hi2";
+import { HiBars3 } from "react-icons/hi2";
 import {
   BiSolidGridAlt,
   BiSolidMoviePlay,
@@ -13,7 +13,6 @@ import { TbDashboard } from "react-icons/tb";
 import { IoChatbubbles ,IoSettingsSharp} from "react-icons/io5";
 import {
   MdPermContactCalendar,
-  MdLibraryAddCheck,
   MdEmail,
 } from "react-icons/md";
 
