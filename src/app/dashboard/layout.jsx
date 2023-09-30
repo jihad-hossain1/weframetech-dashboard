@@ -5,11 +5,11 @@ import React from 'react';
 const DashboardLayout = ({children}) => {
     return (
         <>
-        <section className='flex'>
+        <section className='grid md:flex'>
             <SideNavbar></SideNavbar>
             <div className='flex-1 md:flex relative'>
                 <DashHeader></DashHeader>
-                <div className='bg-[#0D0B21] h-screen w-full mt-20'>
+                <div className='bg-[#0D0B21] h-screen w-full mt-4 md:mt-20'>
                 {children}
                 </div>
             </div>

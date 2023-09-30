@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import { HiBars3 } from "react-icons/hi2";
 
 import OthersMenus from "./OthersMenus";
 import Language from "./Language";
@@ -9,15 +9,15 @@ import DashboardLogin from "./UserNavbarDashboard/DashboardLogin";
 const DashHeader = () => {
   
   return (
-    <div className='bg-[#15132B] py-3 px-4 absolute md:h-20 w-full grid grid-cols-1 md:grid-cols-3 gap-6  text-slate-100 border border-[#19163a]'>
+    <div className='bg-[#15132B] py-2 px-3 md:py-3 md:px-4 md:absolute md:h-20 w-full flex flex-col-reverse md:grid  md:grid-cols-3 gap-6  text-slate-100 border border-[#19163a]'>
       {/* search menu section  */}
       <div>
-        <form className='group relative w-2/3 md:w-full'>
+        <form className='group relative w-full'>
           <svg
             width='20'
             height='20'
             fill='currentColor'
-            className='absolute left-3 top-1/2 -mt-2.5 text-[#7879F1] pointer-events-none '
+            className='sm:h-4 sm:w-4 absolute left-3 top-1/2 -mt-2.5 text-[#7879F1] pointer-events-none '
             aria-hidden='true'
           >
             <path
@@ -27,7 +27,7 @@ const DashHeader = () => {
             />
           </svg>
           <input
-            className=' bg-[#211A75]  focus:outline-none  w-full text-sm leading-6 text-[#7879F1] placeholder-[#7879F1] rounded-full py-3 pl-10 pr-5 shadow-sm'
+            className=' bg-[#211A75]  focus:outline-none  w-full text-sm leading-6 text-[#7879F1] placeholder-[#7879F1] rounded-full py-[6px] md:py-3 pl-10 pr-5 shadow-sm'
             type='search'
             aria-label='search here'
             placeholder='Search here...'
@@ -35,12 +35,19 @@ const DashHeader = () => {
         </form>
       </div>
       {/* others menu section  */}
-     <OthersMenus></OthersMenus>
-      <div className='flex space-x-4 items-center justify-end'>
-        <Language></Language>
-        <div
-    className="inline-block h-10 min-h-[1em] w-0.5 self-stretch bg-[#1f1a5c] opacity-100 mt-3"></div>
-        <DashboardLogin></DashboardLogin>
+      <div className='hidden md:block md:mt-2'>
+        <OthersMenus></OthersMenus>
+      </div>
+      <div className='flex items-center space-x-4 md:grid '>
+        <div className='block md:hidden '>
+         
+          <OthersMenus></OthersMenus>
+        </div>
+        <div className='flex space-x-4 items-center justify-end'>
+          <Language></Language>
+          <div className='hidden  md:inline-block h-10 min-h-[1em] w-0.5 self-stretch bg-[#1f1a5c] opacity-100 mt-3'></div>
+          <DashboardLogin></DashboardLogin>
+        </div>
       </div>
     </div>
   );

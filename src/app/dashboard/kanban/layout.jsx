@@ -3,7 +3,7 @@ import React from 'react';
 
 const KanbanLayout = ({children}) => {
     return (
-        <div className='px-12 py-8'>
+        <div className=' px-2 py-3 md:px-12 md:py-8 '>
             <KanbanNavbar></KanbanNavbar>
             {children}
         </div>

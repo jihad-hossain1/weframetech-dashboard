@@ -11,7 +11,7 @@ const KanbanPage = () => {
     const doneProgres = myProgress.doneProgress;
     const revisedProgres = myProgress.revisedProgress;
     return (
-        <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+        <div className='mt-2 md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
             {/* todoList  */}
             <TodoList myTodo={myTodo}></TodoList>
             {/* In Progress  */}

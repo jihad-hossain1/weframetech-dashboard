@@ -17,8 +17,8 @@ const DashboardLogin = () => {
     <div >
       <div  className="flex items-center space-x-4">
         <img className="rounded-xl w-10 " src={user?.photoURL || `https://i.ibb.co/njsh6Ls/icons8-user-96.png`} alt="user photo" />
-        <div className="flex flex-col items-center">
-            <h4>
+        <div className="md:flex md:flex-col items-center hidden ">
+            <h4 className="">
                 {user?.displayName}
             </h4>
             <h4 className="text-xs">
@@ -29,7 +29,7 @@ const DashboardLogin = () => {
       </div>
       {isActive && (
         <div className="relative ">
-            <ul className="fixed top-16 bg-[#211A75] px-12  py-4 rounded-sm mt-4 ml-14 space-y-4">
+            <ul className="fixed top-16 bg-[#211A75] md:px-12 px-4 py-2 md:py-4 rounded-sm md:mt-4 md:ml-14 space-y-4">
           <li className="hover:text-[#7879F1]">
             <Link onClick={()=>setIsActive(false)} href={'/dashboard'}>Profile</Link>
           </li>

@@ -11,14 +11,14 @@ import KanbanProgressReport from "./KanbanProgressReport";
 const KanbanNavbar = () => {
   const [isActive, setIsActive] = useState(false);
   return (
-    <div className='px-12 py-10 rounded-sm bg-[#15132B] gird grid-cols-1'>
-      <div className='flex items-center justify-between'>
+    <div className='px-3 py-2 md:px-12 md:py-10 rounded-sm bg-[#15132B] gird grid-cols-1'>
+      <div className='grid grid-cols-2 md:flex items-center justify-between'>
         <div className='flex space-x-4'>
           <Link href={`/dashboard`}>
             <BiSolidLeftArrowCircle className='text-2xl mt-2 text-[#A5A5A5] '></BiSolidLeftArrowCircle>
           </Link>
           <div>
-            <h2 className='text-2xl text-slate-100 font-bold pb-4'>
+            <h2 className=' md:text-2xl text-slate-100 font-bold pb-4'>
               School November Tasks
             </h2>
             <h4 className='text-sm text-[#A5A5A5]'>
@@ -26,9 +26,9 @@ const KanbanNavbar = () => {
             </h4>
           </div>
         </div>
-        <div className='flex items-center space-x-4'>
+        <div className='flex items-center md:space-x-4'>
           <div className='flex flex-col items-end'>
-            <h4 className='font-semibold text-slate-100 text-xl'>
+            <h4 className='font-semibold text-slate-100 md:text-xl'>
               Centered Martial Arts
             </h4>
             <p className='text-sm text-[#A5A5A5]'>Sunnyvale, Ca</p>
@@ -46,7 +46,7 @@ const KanbanNavbar = () => {
               className='text-2xl text-[#A5A5A5] relative cursor-pointer'
             ></BsThreeDotsVertical>
             {isActive && (
-              <ul className=' bg-[#211A75] px-12  py-4 rounded-sm  space-y-4  fixed mt-4 right-20'>
+              <ul className=' bg-[#211A75] px-12  py-4 rounded-sm  space-y-4  fixed right-6  md:mt-4 md:right-20'>
                 <li className='hover:text-[#7879F1] text-slate-100'>
                   <Link
                     onClick={() => setIsActive(false)}
