@@ -5,7 +5,7 @@ import ProgressBarComponent from "./progressBar/ProgressBarComponent";
 
 const KanbanProgressReport = () => {
   return (
-    <div className='flex items-center justify-between  ml-10 mt-5'>
+    <div className='grid grid-cols-1 md:grid-cols-2 ml-10 mt-5'>
       <div className="">
         <div className='relative '>
           <div className='absolute left-0  rounded-full w-10 h-10 bg-[#C4C4C4] border-2 border-slate-100'></div>

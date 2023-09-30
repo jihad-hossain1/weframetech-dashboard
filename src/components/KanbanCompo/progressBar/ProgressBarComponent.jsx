@@ -1,12 +1,12 @@
+import { useState } from "react";
+import ProgressBar from "./ProgressBar";
 
-import ProgressBar from "@ramonak/react-progress-bar";
+const ProgressBarComponent = () => {  
+    const [progress,setProgress] = useState(60);
 
-const ProgressBarComponent = () => {
-
-    
     return (
-        <div className="w-[300px]">
-           <ProgressBar className="w-full  "  completed={60} />;
+        <div className="">          
+           <ProgressBar progress={progress}></ProgressBar>
         </div>
     );
 };

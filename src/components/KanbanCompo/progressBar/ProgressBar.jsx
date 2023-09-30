@@ -1,16 +1,16 @@
-import React from 'react';
-import './style.css'
+import React from "react";
 
 
-const ProgressBar = () => {
-    const progrs = 75
-    return (
-        <div className='w-full h-10 bg-red-600'>
-            <div className={`w-full h-10 bg-blue-500 transit `}  style={{width: `${progrs}`}}>
-                
-            </div>
-        </div>
-    );
+const ProgressBar = ({ progress }) => {
+
+  return (
+    <div className='flex space-x-4 items-center justify-end mt-3'>
+      <div className='text-slate-100 text-sm break-keep'>Total progress {progress}%</div>
+      <div className='w-2/4 h-3 rounded-md bg-[#1E1C3A]'>
+        <div className='h-full rounded-md bg-[#6418C3] transition duration-150 ease-out' style={{ width: `${progress}%` }}></div>
+      </div>
+    </div>
+  );
 };
 
 export default ProgressBar;
