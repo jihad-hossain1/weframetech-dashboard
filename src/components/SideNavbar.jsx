@@ -25,8 +25,10 @@ const SideNavbar = () => {
   const [isCoursesActive, setIsCoursesActive] = useState(false);
   const [isInvoicesActive, setIsInvoicesActive] = useState(false);
   const totalMails = ['mail-1','mail-2','mail-3']
-
+  
   return (
+    <>
+    {/* for desktop user  */}
     <div className='hidden md:block flex-none max-w-[350px] bg-[#15132B] px-12 '>
       <div className='mt-10 flex items-center space-x-6 '>
         <h4 className='text-slate-100 text-2xl pl-8'>weframetech</h4>{" "}
@@ -213,6 +215,9 @@ const SideNavbar = () => {
         </ul>
       </div>
     </div>
+
+    {/* for mobile user  */}
+    </>
   );
 };
 
